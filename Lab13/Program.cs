@@ -18,11 +18,10 @@ namespace Lab13
             
 
             Console.WriteLine("Would you like to play against The Rock or AI?(r/a) Enter No to quit.");
-            string playerChosen = Console.ReadLine();
 
-           // Validator opponentValidator = new Validator(playerChosen);
+            Validator opponentValidator = new Validator();
 
-            //opponentValidator.ValidateUsersInput();
+            string playerChosen = opponentValidator.ValidateUsersInput();
 
 
 

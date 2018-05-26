@@ -17,17 +17,23 @@ namespace Lab13
 
         //public string InputValidator1 { get => InputValidator; set => InputValidator = value; }
 
-        //public string ValidateUsersInput (string UserInput)
-        //{
-        //    if (UserInput.ToLower() != "r" || UserInput.ToLower() != "a")
-        //    {
-        //        Console.WriteLine("That was not a valid input. Please enter 'r' or 'a'.");
-                
-        //    }
-        //    else
-        //    {
-        //        return UserInput;
-        //    }
-        //}
+        public string ValidateUsersInput ()
+        {
+            while (true)
+            {
+                string UserInput = Console.ReadLine();
+
+                if (!(UserInput.ToLower() == "r") && !(UserInput.ToLower() == "a"))
+                {
+                    Console.WriteLine("That was not a valid input. Please enter 'r' or 'a'.");
+
+                }
+                else
+                {
+                    return UserInput;
+                }
+
+            }
+        }
     }
 }
